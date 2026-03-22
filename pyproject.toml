@@ -1,0 +1,25 @@
+[project]
+name = "rag-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "arbindchauhan", email = "Arbind.Kumar2@ibm.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "langchain>=0.3.28",
+    "langchain-chroma>=0.2.6",
+    "langchain-community>=0.3.31",
+    "langchain-ollama>=0.3.10",
+    "loguru>=0.7.3",
+    "pypdf>=6.9.1",
+    "python-dotenv>=1.2.1",
+    "rich>=14.3.3",
+]
+
+[project.scripts]
+rag-chatbot = "rag_chatbot.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.10.12,<0.11.0"]
+build-backend = "uv_build"
